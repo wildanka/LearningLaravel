@@ -7,3 +7,6 @@ composer create-project --prefer-dist laravel/laravel LearningLaravel
 php artisan make:controller {ControllerName}
 contoh: 
 php artisan make:controller PagesController
+
+//membuat controller dengan beberapa method default (index, show, store, edit, destroy)
+php artisan make:controller {ControllerName} --resource

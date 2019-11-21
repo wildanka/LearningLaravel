@@ -14,3 +14,6 @@
 //mengarahkan routes ke controller
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
+
+
+Route::get('/student', 'MahasiswaController@show');
