@@ -1,0 +1,9 @@
+composer global require laravel/installer -> untuk install laravel di komputer
+composer create-project --prefer-dist laravel/laravel LearningLaravel
+
+
+
+//untuk membuat controller dengan bantuan artisan
+php artisan make:controller {ControllerName}
+contoh: 
+php artisan make:controller PagesController

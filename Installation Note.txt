@@ -1,2 +1,0 @@
-composer global require laravel/installer -> untuk install laravel di komputer
-composer create-project --prefer-dist laravel/laravel LearningLaravel
