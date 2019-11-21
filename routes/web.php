@@ -17,6 +17,6 @@ Route::get('/', function () {
 
 
 Route::get('/about', function () {
-    $nama = 'Wildan Kurniadi';
+    $nama = 'Wildan Kurniadiiii';
     return view('about', ['nama' => $nama]);
 });
