@@ -11,12 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-
-Route::get('/about', function () {
-    $nama = 'Wildan Kurniadiiii';
-    return view('about', ['nama' => $nama]);
-});
+//mengarahkan routes ke controller
+Route::get('/', 'PagesController@home');
+Route::get('/about', 'PagesController@about');
