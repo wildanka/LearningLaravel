@@ -17,7 +17,7 @@ class MahasiswaController extends Controller
         $mahasiswa = DB::table('t_mahasiswa')->get();
         dump($mahasiswa);
         //dd($mahasiswa); // sama dengan var_dump($mahasiswa); die();
-        return view('student.index');
+        return view('student.index', ['mahasiswa' => $mahasiswa]);
     }
 
     // /**
