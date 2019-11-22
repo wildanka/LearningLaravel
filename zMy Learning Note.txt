@@ -10,3 +10,9 @@ php artisan make:controller PagesController
 
 //membuat controller dengan beberapa method default (index, show, store, edit, destroy)
 php artisan make:controller {ControllerName} --resource
+
+
+#setting environment seperti db host, user, password, port, name hingga aws key dapat dilakukan di file .env (maka dari itu file .env harus dilindungi)
+#Ingat juga bahwa setiap kita melakukan update terhadap file .env maka kita harus restart server matikan server kemudian nyalakan lagi dengan command: 
+   php artisan serve 
+
