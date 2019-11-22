@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Student; //jangan lupa use namespacenya ya :D (just like import in JAVA)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,7 @@ class MahasiswaController extends Controller
      */
     public function index()
     {
-        $mahasiswa = DB::table('t_mahasiswa')->get();
+        $mahasiswa = Student::all();
         dump($mahasiswa);
         //dd($mahasiswa); // sama dengan var_dump($mahasiswa); die();
         return view('student.index', ['mahasiswa' => $mahasiswa]);

@@ -16,3 +16,8 @@ php artisan make:controller {ControllerName} --resource
 #Ingat juga bahwa setiap kita melakukan update terhadap file .env maka kita harus restart server matikan server kemudian nyalakan lagi dengan command: 
    php artisan serve 
 
+
+//membuat Model (Eloquent ORM)
+ php artisan make:model Student
+ akan membuat Model Student di lokasi: App/Student
+ nama model disarankan menggunakan bahasa inggris, sehingga laravel bisa langsung menyambungkan dengan tabel (yang ada di migrations)
