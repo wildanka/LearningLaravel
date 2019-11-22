@@ -22,6 +22,7 @@
                <tbody>
                   @foreach ($mahasiswa as $mhs)
                   <tr>
+                     {{-- https://laravel.com/docs/6.x/blade#loops --}}
                      <th scope="row">{{ $loop->iteration }}</th>
                      <td>{{ $mhs->nama }}</td>
                      <td>{{ $mhs->nim }}</td>
